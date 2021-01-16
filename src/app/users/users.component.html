@@ -1,0 +1,12 @@
+<table style="width:50%" class="table">
+  <tr>
+    <th>Name</th>
+    <th>Uesrname</th>
+    <th>Email</th>
+  </tr>
+  <tr *ngFor="let user of users_list">
+    <td>{{ user.name }}</td>
+    <td>{{ user.username }}</td>
+    <td appHighlighter>{{ user.email }}</td>
+  </tr>
+</table>
